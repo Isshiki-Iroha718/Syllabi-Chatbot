@@ -1,7 +1,4 @@
-from langchain.schema import Document
-from langchain.document_loaders import TextLoader
-from PyPDF2 import PdfReader
-import docx
+from langchain_community.document_loaders import TextLoader, PyPDFLoader,UnstructuredWordDocumentLoader
 import os
 
 # Get the file type before import the syllabus file
@@ -32,19 +29,17 @@ def read_txt(file_path):
 
 # Read the syllabus information file if the file type is .pdf
 def read_pdf(file_path):
-    reader = PdfReader(file_path)
-    content = ""
-    for page in reader.pages:
-        content += page.extract_text()
+    loader = PyPDFLoader(file_path)
+    documents = loader.load()
     print("File read successfully")
-    return Document(page_content=content)
+    return documents
 
 # Read the syllabus information file if the file type is .docx
 def read_docx(file_path):
-    doc = docx.Document(file_path)
-    content = "\n".join([para.text for para in doc.paragraphs])
+    loader = UnstructuredWordDocumentLoader(file_path)
+    documents = loader.load()
     print("File read successfully")
-    return Document(page_content=content)
+    return documents
 
 # Handle different file types of syllabus information file
 def read_file(file_path, file_type):
@@ -62,5 +57,3 @@ def handle_file(file_path):
     print("Start reading file...")
     file_type = get_file_type_by_extension(file_path)
     return read_file(file_path, file_type)
-
-extract_document = handle_file("Syllabus/Syllabi/Duhaime MASY1-GC 3220 Information Security Management Fall 2022_Final.txt")

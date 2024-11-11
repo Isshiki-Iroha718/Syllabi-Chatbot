@@ -1,29 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="130054e5-1053-454e-b7c6-afdb427cade0" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/Syllabi_Chatbot_Algorithm.ipynb" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/initial_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Syllabi_Read.py" beforeDir="false" afterPath="$PROJECT_DIR$/Syllabi_Read.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Syllabus/Syllabi/Ten Syllabi File.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Isshiki-Iroha718"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Isshiki-Iroha718&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Isshiki-Iroha718/Syllabi-Chatbot.git",
-    "accountId": "d9d37e6a-a542-406e-9ef6-eb98a37153c6"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Isshiki-Iroha718/Syllabi-Chatbot.git&quot;,
+    &quot;accountId&quot;: &quot;d9d37e6a-a542-406e-9ef6-eb98a37153c6&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 5
@@ -35,11 +50,24 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.Syllabi_Read.executor": "Run",
+    "Python.database.executor": "Run",
+    "Python.initial_data.executor": "Run",
+    "Python.test.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "70b973ef",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="SharedIndexes">
@@ -63,6 +91,16 @@
       <workItem from="1730160165772" duration="17000" />
       <workItem from="1730171970709" duration="10000" />
       <workItem from="1730172086180" duration="139000" />
+      <workItem from="1730172231024" duration="801000" />
+      <workItem from="1730765769769" duration="29000" />
+      <workItem from="1730852677791" duration="4900000" />
+      <workItem from="1730862864615" duration="4004000" />
+      <workItem from="1730905885614" duration="10311000" />
+      <workItem from="1730996348525" duration="1198000" />
+      <workItem from="1731097651795" duration="10118000" />
+      <workItem from="1731172092689" duration="492000" />
+      <workItem from="1731251801704" duration="4406000" />
+      <workItem from="1731277244925" duration="6498000" />
     </task>
     <servers />
   </component>
@@ -79,5 +117,11 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Syllabi_Chatbot_Model$Syllabi_Read.coverage" NAME="Syllabi_Read 覆盖结果" MODIFIED="1730915747376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Syllabi_Chatbot_Model$initial_data.coverage" NAME="initial_data 覆盖结果" MODIFIED="1731289755079" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Syllabi_Chatbot_Model$database.coverage" NAME="database 覆盖结果" MODIFIED="1731289409488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Syllabi_Chatbot_Model$test.coverage" NAME="test 覆盖结果" MODIFIED="1730853872688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

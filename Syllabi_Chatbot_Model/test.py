@@ -20,7 +20,7 @@ for s in split_documents:
 
 info_str = "\n".join(documents_list)
 
-query = "How many courses do you have in your database?"
+query = "Tell me about the course?"
 
 client = OpenAI()
 
