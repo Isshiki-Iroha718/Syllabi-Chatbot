@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syllabi Chatbot</title>
+    <script>
+        // Check whether the local storage has the previous information
+        window.onload = function() {
+            const savedHistory = JSON.parse(localStorage.getItem("history")) || [];
+            // 如果有历史记录，显示在页面中
+            if (savedHistory.length > 0) {
+                savedHistory.forEach(item => {
+                    addHistory(item.message, item.result);
+                });
+            }
+        };
+
+        // Handle information request
+        function sendMessage() {
+            // Collect information from user input
+            const message = document.getElementById('message').value;
+
+            document.getElementById('result').innerText = "Processing...";
+
+            //Use Fetch API to send POST request
+            fetch('/send_message', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ message: message })
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Hide the loading status
+                document.getElementById('result').innerText = data.message;
+
+                // Use local storage to store the query history
+                const history = JSON.parse(localStorage.getItem("history")) || [];
+                history.push({ message: message, result: data.message });
+                localStorage.setItem("history", JSON.stringify(history));
+
+                // Update the query history
+                addHistory(message, data.message);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                document.getElementById('result').innerText = "Error! Please try again";
+            });
+        }
+
+        // Display the previous history
+        function addHistory(message, result) {
+            const historyDiv = document.getElementById('history');
+            const historyItem = document.createElement('div');
+            historyItem.innerHTML = `<strong>Query:</strong> ${message} <br> <strong>Response:</strong> ${result} <hr>`;
+            historyDiv.appendChild(historyItem);
+        }
+
+        // When refreshing or quitting the browser, clear all the stored information
+        window.onbeforeunload = function() {
+            localStorage.removeItem("history");
+        };
+    </script>
+</head>
+<body>
+    <h1>Syllabi Chatbot</h1>
+
+    <label for="message">Hello. What can I do for you?</label>
+    <input type="text" id="message" placeholder="..." />
+    <button onclick="sendMessage()">Send</button>
+
+    <h2>Response</h2>
+    <p id="result"></p>
+
+    <h2>Previous Query</h2>
+    <div id="history"></div>
+</body>
+</html>

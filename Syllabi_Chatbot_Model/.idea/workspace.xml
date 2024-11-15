@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="130054e5-1053-454e-b7c6-afdb427cade0" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/initial_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Syllabi_Chatbot_Application/Syllabi_Read.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Syllabi_Chatbot_Application/database.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Syllabi_Chatbot_Application/initial_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Syllabi_Chatbot_Application/templates/main.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Syllabi_Read.py" beforeDir="false" afterPath="$PROJECT_DIR$/Syllabi_Read.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Syllabus/Syllabi/Ten Syllabi File.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/database.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,28 +47,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.Syllabi_Read.executor": "Run",
-    "Python.database.executor": "Run",
-    "Python.initial_data.executor": "Run",
-    "Python.test.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.Syllabi_Read.executor&quot;: &quot;Run&quot;,
+    &quot;Python.database.executor&quot;: &quot;Run&quot;,
+    &quot;Python.initial_data.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Frank/Desktop/NYU/2024 Fall/Applied Project/Flask Application&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -100,7 +100,12 @@
       <workItem from="1731097651795" duration="10118000" />
       <workItem from="1731172092689" duration="492000" />
       <workItem from="1731251801704" duration="4406000" />
-      <workItem from="1731277244925" duration="6498000" />
+      <workItem from="1731277244925" duration="6632000" />
+      <workItem from="1731440447910" duration="1631000" />
+      <workItem from="1731446966442" duration="2202000" />
+      <workItem from="1731455606141" duration="610000" />
+      <workItem from="1731508910154" duration="1771000" />
+      <workItem from="1731534686119" duration="4000" />
     </task>
     <servers />
   </component>
@@ -121,7 +126,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Syllabi_Chatbot_Model$Syllabi_Read.coverage" NAME="Syllabi_Read 覆盖结果" MODIFIED="1730915747376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Syllabi_Chatbot_Model$initial_data.coverage" NAME="initial_data 覆盖结果" MODIFIED="1731289755079" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Syllabi_Chatbot_Model$database.coverage" NAME="database 覆盖结果" MODIFIED="1731289409488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Syllabi_Chatbot_Model$database.coverage" NAME="database 覆盖结果" MODIFIED="1731440466813" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Syllabi_Chatbot_Model$test.coverage" NAME="test 覆盖结果" MODIFIED="1730853872688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
